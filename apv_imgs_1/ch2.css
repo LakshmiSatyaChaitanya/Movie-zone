@@ -1,0 +1,38 @@
+
+.A
+{
+    color:blue;
+    border:3px dashed orange;
+    width:300px;
+    height:300px;
+}
+.B
+{
+    color:pink;
+    border-top:3px solid green ;
+    border-right: 3px dashed black;
+    border-bottom: 3px dotted blue;
+    border-left:3px double red;
+    width:300px;
+    height:300px;
+    
+}
+.Mar
+{
+    margin-top:0px;
+    margin-right: 50px orange;
+    margin-bottom: 0px;
+    margin-left: 50px orange;
+    height:200px;
+    border:2px solid red;
+    color:blue;
+    
+}
+.pos
+{
+    padding: 0px 50px 0px 50px ;
+    background-color: darkgreen;
+}
+
+
+

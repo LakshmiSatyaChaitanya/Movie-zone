@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+              img
+              {
+                margin:0px;
+              }
+              .form label
+              {
+                font-weight: bold;
+                font-size: large;
+              }
+              .form
+              {
+                border: 1px solid gray;
+                height: 550px;
+                width: 350px;
+              }
+              .div img
+              {
+                height: 150px;
+                width: 250px;
+              }
+        </style>
+        <script>
+          function Form() {
+            let x = document.forms["SIGN-UP"]["name"].value;
+            let y = document.forms["SIGN-UP"]["mail"].value;
+            let z = document.forms["SIGN-UP"]["pn"].value;
+            let w = document.forms["SIGN-UP"]["pn"].value;
+                if (x == "") {
+                    alert("Name must be filled out");
+                return false;                 
+          }
+          if (y == "") {
+                    alert("Mail must be filled out");
+                return false;                 
+          }
+          if (z== "") {
+                    alert("pno. must be filled out ");}
+          if(65<w<90||97<w<122)   {
+                  alert("Phone no. must be filled with numbers only")          
+          }
+        }
+          </script>
+    </head>
+    <body>
+        <div class="div"><CENTER><img src="APV.png"</CENTER>
+            <form name="SIGN-UP" class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScHOJ67i88XRz8rDg6Vl7iA2xQ74qk462QTfczuG6EywcmuSg/formResponse"
+                target="_blank" onsubmit="return Form()" method="get">
+               <h1> Create Account</h1>
+               <label for="name">Your name :</label><br>
+               <input type="text" placeholder="&#128100;First and last name" name="name"><br><br>
+               <label for="mail">Email :</label><br>
+               <input type="text" placeholder="&#128231; Enter Email"  name="mail"><br><br>
+               <label for="pn">Enter Phone Number:</label><br>
+            <input id="numb" type="tel" placeholder="&#128222; PHONE NUMBER"  name="pn"><br><br>
+               <label for="PW">Enter Password:</label><br>
+               <input type="text" placeholder="&#x1F512;Enter atleast 6 characters"  name="PW"><br>
+               <h4>Passwords must be at least 6 characters.</h4>
+               <label for="PW">Re-enter Password:</label><br>
+               <input type="text" placeholder="&#x1F512;Password should'b same"  name="pW"><br><br>
+                <input type="submit" value="Sign-In" ></form>
+               
+    </body>
+</html>

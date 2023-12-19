@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="project.css">
+<style>
+</style>
+<body>
+
+<h2 style="text-align:center;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Responsive Image Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+    <img src="image1.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+    <img src="image2.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+    <img src="image3.jpeg" style="width:100%">
+  </div>
+     
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+    <img src="image4.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+    <img src="image5.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="image6.jpeg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+    <img src="image7.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+    <img src="image8.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+    <img src="image9.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+    <img src="image10.jpeg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="image1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="FROM OFF A HILL WHOSE CONCAVE WOMB REWORDED">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="image6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="image7.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image8.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image9.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image10.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>

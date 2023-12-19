@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>PRIME VIDEO</TITLE>
+        <LINK rel="stylesheet" type="text/css" href="APV.CSS">
+        <style>
+            body
+            {
+                background-color:black;
+                color: white;
+            }
+            h3:hover
+            {
+                background-color: dodgerblue;
+            }
+            h1:hover,h2:hover
+            {
+               color:rgb(23, 132, 179);
+            }
+        </style>
+    </HEAD>
+    <BODY>
+        <div >
+            <header class="header">
+                <div class="div-logo">
+                    <img src="prime.jpg"  alt="Prime video" height="70px" width="150px">
+                </div>
+                <nav class="APnav">
+                    <a href="home.html">HOME</a>
+                    <a href="#">STORE</a>
+                    <a href="channels.html">CHANNELS</a>
+                    <a href="#"><form >
+                        <label for="Categories">CATEGORIES: </label>
+                        <select id="Categories">
+                           <option class="fm" value="included with prime">LOVE STORIES</option></a>
+                            <option class="fm" value="AMAZON ORIGINALS">ACTION MOVIES</option>
+                            <option class="fm" value="MOVIES">PAN INDIA MOVIES</option>
+                            <option class="fm" value="TV">ADVENTURE MOVIES</option>
+                            <option class="fm" value="KIDS">HORROR</option>
+                        </select>
+                    </form></a>
+                    <a href="start.html">MY STUFF</a>
+                    <a href="start.html" style="background-color:rgb(5, 62, 119) ;padding: 2px;margin-left:70px;">TRY FOR FREE</a>
+                    <img src="search.jpg" alt="Search box" style="margin-left:70px ;" height="30px" width="30px">
+
+                </nav>
+            </header>
+         </div>   
+            <h1 style="margin:100px;display: inline-block">Welcome to Prime Video<br>Join Prime to watch the latest movies,<br>
+                TV shows and award-winning Amazon Originals<br><br><button><h1><a href="start.html">Start your 30 days free trail</a></button></h1></button></h1>
+                <img  style="float:center;padding-left:70px;padding-top: 200px;"src="saaho.jpg" alt="SAAHO" height="300px" width="300px">
+                <img  style="float:right;padding-top: 200px;"src="RRR.jpg" alt="RRR" height="300px" width=300px"><br>
+        
+                <img  style="float:center;padding-left:940px;padding-top:0px"src="SVP.jpg" alt="SVP" height="300px" width="300px">
+                <img  style="float:right;"src="AVP.jpg" alt="AVP" height="300px" width=300px"><br>
+            <h1 style="margin:100px ;display:inline-block;">Movie rentals on Prime Video<br>Early Access to new movies, before digital subscription
+                <br><br><button><h1>Rent Now</h1></button></h1>
+                <img  style="float:center;padding-left:0px;padding-top:130px"src="WAR.jpg" alt="WAR" height="300px" width="300px">
+                <img  style="float:right;padding-top:130px"src="MAJOR.jpg" alt="MAJOR" height="300px" width=300px"><br> 
+            <div class="d">
+                <h1 style="margin:100px;display: inline-block">Your favorite channels all in one place<br><br>
+                    With Prime Video Channels, find shows and movies from your <br>favorite channels all in one place.<br><br> 
+                    Enjoy with an add-on subscription to Channels of your choice
+                </h1>
+                <img  style="float: right;padding-left:90px;padding-top:0px"src="CHANNELS 1.jpeg" alt="CH1" height="350px" width="200px">
+                <img  style="float: right;"src="CHANNELS 2.jpeg" alt="CH2" height="330px" width="200px"><br> 
+            </div>   
+            <div >
+                <img  style="float:left;padding:20px 0px 0px 100px;"src="TVREM.jpg" alt="REMOTE" height="330px" width=450px "> 
+                <h1 style="float:right;">Even better with Fire TV Stick<br><br>
+                    The biggest movies and TV shows are always better on a big screen.<br> Simply plug in your Amazon Fire TV Stick and stream on any HDTV. <br>
+                    Press the voice button on the remote and say the name of the title <br>you want to watch to find it in seconds.<br><br>
+                    <button><h1><a href="start.html">Get started</a></button></h1></button>
+                </h1>
+            </div><br> 
+            <div >
+                <h1 style="margin:100px;display: inline-block">Family Friendly<br><br>
+                    With easy to use Parental Controls and a dedicated <br>kids page, enjoy secure, ad-free kids entertainment. <br><br>
+                    Kids can enjoy popular TV shows like <br> Doramoen,Kickbuttowski and Phineas and Ferb.<br><br>
+                    <button><h1><a href="start.html">Get started</a></h1></button>
+                </h1>
+                <img  style="float:center;padding-left:5px ;"src="DORA.jpg" alt="DORAMOEN" height="330px" width="200px">
+                <img  style="float: center;padding-left:5px ;"src="KICK.jpg" alt="KICK BUTTOWSKI" height="330px" width="215px">
+                <img  style="float: center;padding-left: 5px;"src="P & F.jpg" alt="PHINEAS AND FERB" height="330px" width="215px"><br> 
+            </div> 
+            <div class="end">
+                <img src="prime.jpg" alt="PRIME VIDEO" height="70px" width="150px">
+                <nav class="endnav">
+                    <br><a href="#">Terms and Privacy Notice</a><br><br>
+                    <a href="help.html">Help</a>
+                </nav>
+                </div>
+     
+    </BODY>
+</HTML>
